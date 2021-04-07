@@ -1,0 +1,5 @@
+{
+    "name": "eslint-plugin-react-hooks-disable-import",
+    "version": "1.0.0",
+    "main": "index.js"
+}
