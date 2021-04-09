@@ -22,9 +22,9 @@ const { val } = React.useContext(...);
 
 Add the package to "plugins"
 ```
-"react-hooks-disable-import"
+"@singlestore/react-hooks-disable-import"
 ```
 Add the rule to the "rules"
 ```
-"react-hooks-disable-import/react-hooks-disable-import": "error"
+"@singlestore/react-hooks-disable-import/react-hooks-disable-import": "error"
 ```
