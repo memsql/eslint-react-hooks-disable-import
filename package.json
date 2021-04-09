@@ -1,6 +1,19 @@
 {
-    "name": "@singlestore/eslint-plugin-react-hooks-disable-import",
-    "version": "1.0.0",
-    "main": "src/index.js",
-    "license": "MIT"
+  "name": "@singlestore/eslint-plugin-react-hooks-disable-import",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "description": "## About",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/memsql/eslint-react-hooks-disable-import.git"
+  },
+  "author": "SingleStore, Inc.",
+  "bugs": {
+    "url": "https://github.com/memsql/eslint-react-hooks-disable-import/issues"
+  },
+  "homepage": "https://github.com/memsql/eslint-react-hooks-disable-import#readme"
 }
