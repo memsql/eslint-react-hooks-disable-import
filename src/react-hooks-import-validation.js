@@ -14,6 +14,7 @@ module.exports = {
                 const name = node.imported.name;
 
                 if (
+                    name === "createContext" ||
                     name === "useState" ||
                     name === "useEffect" ||
                     name === "useContext" ||
