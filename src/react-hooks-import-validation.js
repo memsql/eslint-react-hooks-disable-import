@@ -1,11 +1,11 @@
 module.exports = {
     meta: {
         docs: {
-            description: "react hooks cannot not be imported individually",
+            description: "React hooks cannot not be imported individually.",
         },
         schema: [],
         messages: {
-            unexpected: "a react hook was found individually imported",
+            unexpected: "A React hook was individually imported.",
         },
     },
     create(context) {
@@ -14,6 +14,7 @@ module.exports = {
                 const name = node.imported.name;
 
                 if (
+                    name === "createContext" ||
                     name === "useState" ||
                     name === "useEffect" ||
                     name === "useContext" ||
