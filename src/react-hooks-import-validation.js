@@ -1,3 +1,22 @@
+const NAMES = new Set([
+    "createContext",
+    "useCallback",
+    "useContext",
+    "useDebugValue",
+    "useDeferredValue",
+    "useEffect",
+    "useId",
+    "useImperativeHandle",
+    "useInsertionEffect",
+    "useLayoutEffect",
+    "useMemo",
+    "useReducer",
+    "useRef",
+    "useState",
+    "useSyncExternalStore",
+    "useTransition",
+]);
+
 module.exports = {
     meta: {
         docs: {
@@ -13,19 +32,7 @@ module.exports = {
             ImportSpecifier(node) {
                 const name = node.imported.name;
 
-                if (
-                    name === "createContext" ||
-                    name === "useState" ||
-                    name === "useEffect" ||
-                    name === "useContext" ||
-                    name === "useReducer" ||
-                    name === "useCallback" ||
-                    name === "useMemo" ||
-                    name === "useRef" ||
-                    name === "useImperativeHandle" ||
-                    name === "useLayoutEffect" ||
-                    name === "useDebugValue"
-                ) {
+                if (NAMES.has(name)) {
                     const importDeclaration = node.parent;
 
                     if (
